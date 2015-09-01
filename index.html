@@ -41,6 +41,37 @@
 <p>S3 and/or other hosted article links provided in JSON XML and CSV formats</p>
 
 <h2>
+<a id="clinicians-and-developers" class="anchor" href="#clinicians-and-developers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clinicians and Developers:</h2>
+
+<p>API access to files</p>
+
+<ul>
+<li>
+<p>GET list of disciplines</p>
+
+<pre><code>GET /disciplines
+curl http://localhost:9999/disciplines
+</code></pre>
+</li>
+<li>
+<p>GET list of documents available</p>
+
+<pre><code>POST /get
+BODY='{"discipline": "$DISCIPLINE_NAME"}'
+curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+</code></pre>
+</li>
+<li>
+<p>GET single document</p>
+
+<pre><code>POST /doc
+BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
+curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+</code></pre>
+</li>
+</ul>
+
+<h2>
 <a id="contributors" class="anchor" href="#contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributors:</h2>
 
 <p>create json file</p>
@@ -57,19 +88,10 @@
 $ node script.js
 </code></pre>
 
-<p>you may pass json as an argument or save <code>json.json</code> to directory</p>
+<p>you may pass json as an argument if not saved to directory</p>
 
 <pre><code>$ sh ./post.sh '{"optional": "json"}'
 </code></pre>
-
-<h2>
-<a id="clinicians-and-developers" class="anchor" href="#clinicians-and-developers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clinicians and Developers:</h2>
-
-<p>API access to files</p>
-
-<ul>
-<li>Coming soon pending TLD</li>
-</ul>
 
 <h2>
 <a id="disciplines" class="anchor" href="#disciplines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disciplines:</h2>
