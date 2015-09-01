@@ -24,7 +24,7 @@ run script.js
 	$ npm install
 	$ node script.js
 
-you may pass json as an argument or save `json.json` to directory
+you may pass json as an argument if not saved to directory
 
 	$ sh ./post.sh '{"optional": "json"}'
 
