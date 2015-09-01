@@ -11,6 +11,25 @@ aug2uag © 2015
 ## Access:
 S3 and/or other hosted article links provided in JSON XML and CSV formats
 
+## Clinicians and Developers:
+API access to files
+* GET list of disciplines
+
+	GET /disciplines
+	curl http://guidelin.es/disciplines
+
+* GET list of documents available
+
+	POST /get
+	BODY='{"discipline": "$DISCIPLINE_NAME"}'
+	curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+
+* GET single document
+	
+	POST /doc
+	BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
+	curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+
 ## Contributors:
 create json file
 
@@ -27,10 +46,6 @@ run script.js
 you may pass json as an argument if not saved to directory
 
 	$ sh ./post.sh '{"optional": "json"}'
-
-## Clinicians and Developers:
-API access to files
-* Coming soon pending TLD
 
 ## Disciplines:
 ### `dental_guidelines.json` Purpose:
