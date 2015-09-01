@@ -47,26 +47,26 @@
 
 <ul>
 <li>
-<p>GET list of disciplines</p>
+<p>Get list of disciplines</p>
 
 <pre><code>GET /disciplines
 curl http://localhost:9999/disciplines
 </code></pre>
 </li>
 <li>
-<p>GET list of documents available</p>
+<p>Get list of documents available</p>
 
 <pre><code>POST /get
 BODY='{"discipline": "$DISCIPLINE_NAME"}'
-curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/get
 </code></pre>
 </li>
 <li>
-<p>GET single document</p>
+<p>Get single document</p>
 
 <pre><code>POST /doc
 BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
-curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/document
+curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/doc
 </code></pre>
 </li>
 </ul>
@@ -77,8 +77,8 @@ curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:999
 <p>create json file</p>
 
 <pre><code>{
-    "type": $DISCIPLINE_NAME,
-    "json": $GUIDELINES
+    "type": "$DISCIPLINE_NAME",
+    "json": "$GUIDELINES"
 }
 </code></pre>
 
