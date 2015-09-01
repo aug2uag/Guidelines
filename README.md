@@ -28,7 +28,7 @@ API access to files
 	
 		POST /doc
 		BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
-		curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+		curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/document
 
 ## Contributors:
 create json file
@@ -68,7 +68,7 @@ you may pass json as an argument if not saved to directory
 * Renal Disease in Dentistry
 * Wheelchair Transfer Pocket Guide
 
-#### Todo:
+### Todo:
 * Update guidelines
 * Provide guidelines of other clinical practices and/or specialties
 * Multiplatform scripts for pdf downloads
