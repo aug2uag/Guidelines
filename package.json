@@ -1,0 +1,35 @@
+{
+  "name": "Guidelines",
+  "version": "1.0.0",
+  "description": "Guidelines for clinicians.",
+  "main": "script.js",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "json-2-csv": "^1.4.0",
+    "json2csv": "^2.11.0",
+    "json2xml": "^0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Test\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aug2uag/Guidelines"
+  },
+  "keywords": [
+    "guidelines",
+    "biomedical",
+    "clinic",
+    "patient",
+    "surgery",
+    "disease"
+  ],
+  "author": "@aug2uag",
+  "license": "Attribution 4.0 International",
+  "bugs": {
+    "url": "https://github.com/aug2uag/Guidelines/issues"
+  },
+  "homepage": "https://github.com/aug2uag/Guidelines"
+}

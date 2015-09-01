@@ -1,0 +1,17 @@
+{
+	"ADA Prophylaxis Guidelines": "https://s3.amazonaws.com/OMAppPDFs/ADAProphyGuidelines.pdf",
+	"AHA Prophylaxis Guidelines": "https://s3.amazonaws.com/OMAppPDFs/AHAProphyGuideline.pdf",
+	"Chronic Kidney Disease": "https://s3.amazonaws.com/OMAppPDFs/ChronicKidneyDisease.pdf",
+	"Medically Compromised Patients": "https://s3.amazonaws.com/OMAppPDFs/DentalManagementMedicallyCompromised.pdf",
+	"Diabetes/CKD": "https://s3.amazonaws.com/OMAppPDFs/diabetes-ckd-update-2012.pdf",
+	"Immune Compromised Patients": "https://s3.amazonaws.com/OMAppPDFs/G_AntibioticProphylaxis.pdf",
+	"Pediatric Local Anesthesia": "https://s3.amazonaws.com/OMAppPDFs/G_LocalAnesthesiaPeds.pdf",
+	"Local Anesthesia in Dentistry": "https://s3.amazonaws.com/OMAppPDFs/LADentistry.pdf",
+	"Immune Compromised Pediatric Patients": "https://s3.amazonaws.com/OMAppPDFs/NGC-7118.pdf",
+	"Oncology Pocket Guide": "https://s3.amazonaws.com/OMAppPDFs/oncologyGuide.pdf",
+	"Oral Cancer Screening": "https://s3.amazonaws.com/OMAppPDFs/OralCancerScreening.pdf",
+	"Patients with Organ Transplant": "https://s3.amazonaws.com/OMAppPDFs/OrganTransplant.pdf",
+	"Local Anesthesia Guidelines": "https://s3.amazonaws.com/OMAppPDFs/protocols-MaximumRecommendedDosesandDurationofLocalAnesthetics-220713-1512-66306.pdf",
+	"Renal Disease in Dentistry": "https://s3.amazonaws.com/OMAppPDFs/RenalDisease.pdf",
+	"Wheelchair Transfer Pocket Guide": "https://s3.amazonaws.com/OMAppPDFs/WheelchairTransfer.pdf"
+}
