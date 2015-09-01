@@ -28,7 +28,7 @@ API access to files
 	
 		POST /doc
 		BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
-		curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/document
+		curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/doc
 
 ## Contributors:
 create json file
