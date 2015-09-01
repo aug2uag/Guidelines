@@ -13,29 +13,29 @@ S3 and/or other hosted article links provided in JSON XML and CSV formats
 
 ## Clinicians and Developers:
 API access to files
-* GET list of disciplines
+* Get list of disciplines
 
 		GET /disciplines
 		curl http://localhost:9999/disciplines
 
-* GET list of documents available
+* Get list of documents available
 
 		POST /get
 		BODY='{"discipline": "$DISCIPLINE_NAME"}'
-		curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+		curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/get
 
-* GET single document
+* Get single document
 	
 		POST /doc
 		BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
-		curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/doc
+		curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/doc
 
 ## Contributors:
 create json file
 
 	{
-		"type": $DISCIPLINE_NAME,
-		"json": $GUIDELINES
+		"type": "$DISCIPLINE_NAME",
+		"json": "$GUIDELINES"
 	}
 
 run script.js
