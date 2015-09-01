@@ -15,20 +15,20 @@ S3 and/or other hosted article links provided in JSON XML and CSV formats
 API access to files
 * GET list of disciplines
 
-	GET /disciplines
-	curl http://guidelin.es/disciplines
+		GET /disciplines
+		curl http://localhost:9999/disciplines
 
 * GET list of documents available
 
-	POST /get
-	BODY='{"discipline": "$DISCIPLINE_NAME"}'
-	curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+		POST /get
+		BODY='{"discipline": "$DISCIPLINE_NAME"}'
+		curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
 
 * GET single document
 	
-	POST /doc
-	BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
-	curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
+		POST /doc
+		BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
+		curl -H "Content-Type: application/json" -X POST -d "$BODY" http://localhost:9999/get
 
 ## Contributors:
 create json file
