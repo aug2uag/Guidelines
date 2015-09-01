@@ -16,19 +16,19 @@ API access to files
 * Get list of disciplines
 
 		GET /disciplines
-		curl http://localhost:9999/disciplines
+		curl http://api-guidelines.rhcloud.com/disciplines
 
 * Get list of documents available
 
 		POST /get
 		BODY='{"discipline": "$DISCIPLINE_NAME"}'
-		curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/get
+		curl -H "Content-Type: application/json" -d "$BODY" http://api-guidelines.rhcloud.com/get
 
 * Get single document
 	
 		POST /doc
 		BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
-		curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/doc
+		curl -H "Content-Type: application/json" -d "$BODY" http://api-guidelines.rhcloud.com/doc
 
 ## Contributors:
 create json file
@@ -48,10 +48,10 @@ you may pass json as an argument if not saved to directory
 	$ sh ./post.sh '{"optional": "json"}'
 
 ## Disciplines:
-### `dental_guidelines.json` Purpose:
+### `dental_guidelines` Purpose:
 * Provide general guidelines for dental disciplines
 
-### `dental_guidelines.json` Contents:
+### `dental_guidelines` Contents:
 * ADA Prophylaxis Guidelines
 * AHA Prophylaxis Guidelines
 * Chronic Kidney Disease

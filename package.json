@@ -2,7 +2,7 @@
   "name": "Guidelines",
   "version": "1.0.0",
   "description": "Guidelines for clinicians.",
-  "main": "script.js",
+  "main": "index.js",
   "dependencies": {
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
@@ -11,7 +11,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Test\" && exit 1"
+    "test": "echo \"Test\" && exit 1",
+    "postinstall": "npm cache clean",
+    "postupdate": "npm prune",
+    "start": "node index.js",
   },
   "repository": {
     "type": "git",
