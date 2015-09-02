@@ -21,19 +21,18 @@ app.get('/disciplines', function(req, res) {
 });
 
 app.post('/get', function(req, res) {
-	var document = req.body
-	  , discipline = document.discipline;
-	Utils.getDiscipline(discipline, function(err, result) {
+	Utils.getDiscipline(req.body.discipline, function(err, result) {
 		if (err) throw err;
 		else res.json(Object.keys(result));
 	});
 });
 
 app.post('/doc', function(req, res) {
-	var document = req.body
-	  , discipline = document.discipline
-	  , _document = document.document;
-	Utils.getPDF(discipline, _document, res);
+	Utils.getPDF(req.body.discipline, req.body.document, res);
+});
+
+app.post('/url', function(req, res) {
+	Utils.getPDF(req.body.discipline, req.body.document, res, true);
 });
 
 var _ipaddr  = process.env.OPENSHIFT_NODEJS_IP || 'localhost';

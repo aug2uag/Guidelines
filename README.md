@@ -30,6 +30,12 @@ API access to files
 		BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
 		curl -H "Content-Type: application/json" -d "$BODY" http://api-guidelines.rhcloud.com/doc
 
+* Get single document URL
+	
+		POST /url
+		BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
+		curl -H "Content-Type: application/json" -d "$BODY" http://api-guidelines.rhcloud.com/url
+
 ## Contributors:
 create json file
 
