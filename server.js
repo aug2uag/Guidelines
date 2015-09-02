@@ -33,11 +33,7 @@ app.post('/doc', function(req, res) {
 	var document = req.body
 	  , discipline = document.discipline
 	  , _document = document.document;
-	Utils.getPDF(discipline, _document, function(err, result) {
-		if (err) throw err;
-		res.header('Content-Type', 'application/pdf');
-		res.send(result);
-	})
+	Utils.getPDF(discipline, _document, res);
 });
 
 var _ipaddr  = process.env.OPENSHIFT_NODEJS_IP || 'localhost';
