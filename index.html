@@ -50,7 +50,7 @@
 <p>Get list of disciplines</p>
 
 <pre><code>GET /disciplines
-curl http://localhost:9999/disciplines
+curl http://api-guidelines.rhcloud.com/disciplines
 </code></pre>
 </li>
 <li>
@@ -58,7 +58,7 @@ curl http://localhost:9999/disciplines
 
 <pre><code>POST /get
 BODY='{"discipline": "$DISCIPLINE_NAME"}'
-curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/get
+curl -H "Content-Type: application/json" -d "$BODY" http://api-guidelines.rhcloud.com/get
 </code></pre>
 </li>
 <li>
@@ -66,7 +66,15 @@ curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/get
 
 <pre><code>POST /doc
 BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
-curl -H "Content-Type: application/json" -d "$BODY" http://localhost:9999/doc
+curl -H "Content-Type: application/json" -d "$BODY" http://api-guidelines.rhcloud.com/doc
+</code></pre>
+</li>
+<li>
+<p>Get single document URL</p>
+
+<pre><code>POST /url
+BODY='{"discipline": "$DISCIPLINE_NAME", "document": "$DOCUMENT_NAME"}'
+curl -H "Content-Type: application/json" -d "$BODY" http://api-guidelines.rhcloud.com/url
 </code></pre>
 </li>
 </ul>
@@ -97,14 +105,14 @@ $ node script.js
 <a id="disciplines" class="anchor" href="#disciplines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disciplines:</h2>
 
 <h3>
-<a id="dental_guidelinesjson-purpose" class="anchor" href="#dental_guidelinesjson-purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>dental_guidelines.json</code> Purpose:</h3>
+<a id="dental_guidelines-purpose" class="anchor" href="#dental_guidelines-purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>dental_guidelines</code> Purpose:</h3>
 
 <ul>
 <li>Provide general guidelines for dental disciplines</li>
 </ul>
 
 <h3>
-<a id="dental_guidelinesjson-contents" class="anchor" href="#dental_guidelinesjson-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>dental_guidelines.json</code> Contents:</h3>
+<a id="dental_guidelines-contents" class="anchor" href="#dental_guidelines-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>dental_guidelines</code> Contents:</h3>
 
 <ul>
 <li>ADA Prophylaxis Guidelines</li>
