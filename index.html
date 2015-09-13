@@ -22,10 +22,22 @@
       <h1>
 <a id="guidelines" class="anchor" href="#guidelines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Guidelines</h1>
 
-<p>aug2uag © 2015</p>
+<p><a href="https://github.com/aug2uag/guidelines/releases"><img src="https://img.shields.io/github/release/aug2uag/guidelines.svg?style=flat-square" alt="git"></a>
+<a href="https://npmjs.org/package/guidelines"><img src="https://img.shields.io/npm/v/guidelines.svg?style=flat-square" alt="npm"></a></p>
+
+<ul>
+<li><a href="#purpose">Statement of Purpose</a></li>
+<li><a href="#access">Access</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#disciplines">Disciplines</a></li>
+<li><a href="#todo">TODO</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+
+<p><a name="purpose"></a></p>
 
 <h2>
-<a id="general-purpose" class="anchor" href="#general-purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>General Purpose:</h2>
+<a id="statement-of-purpose" class="anchor" href="#statement-of-purpose" aria-hidden="true"><span class="octicon octicon-link"></span></a>Statement of Purpose:</h2>
 
 <ul>
 <li>Centralize Guidelines for Clinical Practices</li>
@@ -35,10 +47,14 @@
 <li>Support Patient Care and Rights</li>
 </ul>
 
+<p><a name="access"></a></p>
+
 <h2>
 <a id="access" class="anchor" href="#access" aria-hidden="true"><span class="octicon octicon-link"></span></a>Access:</h2>
 
 <p>S3 and/or other hosted article links provided in JSON XML and CSV formats</p>
+
+<p><a name="contributing"></a></p>
 
 <h2>
 <a id="clinicians-and-developers" class="anchor" href="#clinicians-and-developers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Clinicians and Developers:</h2>
@@ -90,16 +106,18 @@ curl -H "Content-Type: application/json" -d "$BODY" http://api-guidelines.rhclou
 }
 </code></pre>
 
-<p>run script.js</p>
+<p>run <a href="./script.js">script.js</a></p>
 
 <pre><code>$ npm install
 $ node script.js
 </code></pre>
 
-<p>you may pass json as an argument if not saved to directory</p>
+<p>you may pass json with <a href="./post.sh">post.sh</a> as an argument if not saved to directory</p>
 
 <pre><code>$ sh ./post.sh '{"optional": "json"}'
 </code></pre>
+
+<p><a name="disciplines"></a></p>
 
 <h2>
 <a id="disciplines" class="anchor" href="#disciplines" aria-hidden="true"><span class="octicon octicon-link"></span></a>Disciplines:</h2>
@@ -132,6 +150,8 @@ $ node script.js
 <li>Wheelchair Transfer Pocket Guide</li>
 </ul>
 
+<p><a name="todo"></a></p>
+
 <h3>
 <a id="todo" class="anchor" href="#todo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Todo:</h3>
 
@@ -141,6 +161,13 @@ $ node script.js
 <li>Multiplatform scripts for pdf downloads</li>
 <li>Web and Mobile Applications</li>
 </ul>
+
+<p><a name="license"></a></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>aug2uag © 2015, Licensed under <a href="./LICENSE">MIT</a>.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/aug2uag/Guidelines">Guidelines</a> is maintained by <a href="https://github.com/aug2uag">aug2uag</a>.</span>
