@@ -1,16 +1,27 @@
 # Guidelines
-aug2uag © 2015
+[![git][git-badge]][git-url]
+[![npm][npm-badge]][npm-url]
 
-## General Purpose:
+* [Statement of Purpose](#purpose)
+* [Access](#access)
+* [Contributing](#contributing)
+* [Disciplines](#disciplines)
+* [TODO](#todo)
+* [License](#license)
+
+<a name="purpose"></a>
+## Statement of Purpose:
 * Centralize Guidelines for Clinical Practices
 * Convenient Utilization of Guidelines for Applications and Interfaces
 * Support Clinician Access to Guidelines
 * Support Best Clinical Practices
 * Support Patient Care and Rights
 
+<a name="access"></a>
 ## Access:
 S3 and/or other hosted article links provided in JSON XML and CSV formats
 
+<a name="contributing"></a>
 ## Clinicians and Developers:
 API access to files
 * Get list of disciplines
@@ -44,15 +55,16 @@ create json file
 		"json": "$GUIDELINES"
 	}
 
-run script.js
+run [script.js][script]
 
 	$ npm install
 	$ node script.js
 
-you may pass json as an argument if not saved to directory
+you may pass json with [post.sh][post] as an argument if not saved to directory
 
 	$ sh ./post.sh '{"optional": "json"}'
 
+<a name="disciplines"></a>
 ## Disciplines:
 ### `dental_guidelines` Purpose:
 * Provide general guidelines for dental disciplines
@@ -74,8 +86,22 @@ you may pass json as an argument if not saved to directory
 * Renal Disease in Dentistry
 * Wheelchair Transfer Pocket Guide
 
+<a name="todo"></a>
 ### Todo:
 * Update guidelines
 * Provide guidelines of other clinical practices and/or specialties
 * Multiplatform scripts for pdf downloads
 * Web and Mobile Applications
+
+<a name="license"></a>
+## License
+aug2uag © 2015, Licensed under [MIT][].
+
+[MIT]: ./LICENSE
+[script]: ./script.js
+[post]: ./post.sh
+
+[git-badge]: https://img.shields.io/github/release/aug2uag/guidelines.svg?style=flat-square
+[git-url]: https://github.com/aug2uag/guidelines/releases
+[npm-badge]: https://img.shields.io/npm/v/guidelines.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/guidelines

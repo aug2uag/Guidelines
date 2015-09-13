@@ -1,5 +1,5 @@
 {
-  "name": "Guidelines",
+  "name": "guidelines",
   "version": "1.0.0",
   "description": "Guidelines for clinicians.",
   "main": "index.js",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aug2uag/Guidelines"
+    "url": "https://github.com/aug2uag/guidelines"
   },
   "keywords": [
     "guidelines",
@@ -30,9 +30,9 @@
     "disease"
   ],
   "author": "@aug2uag",
-  "license": "Attribution 4.0 International",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aug2uag/Guidelines/issues"
+    "url": "https://github.com/aug2uag/guidelines/issues"
   },
-  "homepage": "https://github.com/aug2uag/Guidelines"
+  "homepage": "https://github.com/aug2uag/guidelines"
 }
